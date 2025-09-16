@@ -1,0 +1,216 @@
+body{
+    background-color: black;
+}
+.parent-container{
+    position: fixed;
+    width: 15%;
+    height: 100vh;
+    top: 0;
+    background-color: black;
+}
+.head{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border: 1px solid #232628;
+    margin-left: 15%;
+    width: 590px;
+    height: 9vh;
+    outline: none;
+    background-color: black;
+    
+}
+.son{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 9vh;
+    overflow-x: auto;
+    gap: 20px;
+    white-space: nowrap;
+    padding-left: 20px;
+}
+.son::-webkit-scrollbar{
+    overflow: hidden;
+}
+.son div{
+    color: #585b5f;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+.son div:hover{
+    color: white;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+.second{
+    margin-left: 60%;
+}
+.logo{
+    width: 30px;
+    padding-top: 20px;
+}
+.leave{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+   
+}
+.rogo{
+    width: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.gogo{
+    width: 25px;
+   
+}
+.reshape{
+    margin-left: -10px;
+}
+.post{
+    margin-left: 15%;
+    width: 590px;
+    height: 30vh;
+    border: 1px solid #232628;
+    outline: none;
+}
+.Everyone{
+    color: #1c96e8;
+    background-color: black;
+    border-radius: 10px;
+    margin: 10px;
+    margin-left: 55px;
+    text-align: center;
+}
+.happen{
+    font-size: 20px;
+    color: #696e72;
+    margin: 10px;
+    margin-left: 55px;
+}
+.world{
+    width: 20px;
+    
+}
+.reply{
+    color: #1d9bf0;
+    font-weight: bolder;
+    font-size: 14px;
+    padding-left: 6px;
+    
+}
+div button{
+    background: black;
+    border: none;
+}
+.www{
+    margin-left: 50px;
+    background-color: black;
+   
+}
+.line{
+    border: 1px solid #232628;
+    width: 85%;
+    margin: 10px;
+    margin-left: 55px;
+}
+.emoji{
+    margin: 10px;
+    margin-left: 55px;
+}
+
+.host{
+    background-color: #787a7a;
+    width: 70px;
+    height: 6vh;
+    border-radius: 20px;
+    margin-left: 250px;
+    margin-bottom: ;
+   
+}
+.rost{
+    font-weight: bolder;
+}
+.word{
+    width: 20px;
+}
+.undefined{
+    margin-left: 15%;
+    border: 1px solid  #232628;
+    width: 590px;
+    height: 100vh;
+}
+.fined{
+    margin-left: 15%;
+    border: 1px solid  #232628;
+    width: 590px;
+    height: 50vh;
+}
+.define{
+    color: white;
+    margin-left: 55px;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+.define:hover{
+    text-decoration: underline;
+}
+.username{
+    font-size: 13px;
+    color: gray;
+    font-weight: 400;  
+}
+.username:hover{
+    text-decoration: none;
+}
+.twitter-tweet{
+    margin-left: 15%;
+   border: none;
+}
+.inner{
+    color: white;
+    margin-left: 55px;
+    font-family: sans-serif;
+    font-weight: ;
+}
+.tweet-wrapper {
+  /* margin-left: 15%;
+  width: 580px;
+  border: 1px solid #232628;
+  outline: none;|
+  background-color: black; */
+}
+
+@media (max-width: 700px) {
+    .head{
+        width: 100%;
+    }
+    .post{
+        width: 84%;
+    }
+}
+@media (max-width: 706px) {
+    .head{
+        width: 84%;
+    }
+    .second{
+        margin-left: 40%;
+    }
+    .word{
+        display: none;
+    }
+    .undefined{
+        width: 84%;
+    }
+    .fined{
+        width: 84%;
+    }
+}
