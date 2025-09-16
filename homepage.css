@@ -11,6 +11,7 @@ body{
 .head{
     position: sticky;
     top: 0;
+    z-index: 1;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -156,7 +157,7 @@ div button{
 }
 .define{
     color: white;
-    margin-left: 55px;
+    margin-left: 65px;
     font-family: sans-serif;
     font-weight: 700;
 }
@@ -164,7 +165,7 @@ div button{
     text-decoration: underline;
 }
 .username{
-    font-size: 13px;
+    font-size: 15px;
     color: gray;
     font-weight: 400;  
 }
@@ -177,16 +178,22 @@ div button{
 }
 .inner{
     color: white;
-    margin-left: 55px;
+    margin-left: 65px;
     font-family: sans-serif;
-    font-weight: ;
+    font-size: 15px;
 }
-.tweet-wrapper {
-  /* margin-left: 15%;
-  width: 580px;
-  border: 1px solid #232628;
-  outline: none;|
-  background-color: black; */
+div img{
+    position: absolute;
+    margin-left: 10px;
+}
+.machia{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+.loved{
+    width: 530px;
+    height: 20vhvh;
 }
 
 @media (max-width: 700px) {
