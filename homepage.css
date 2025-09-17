@@ -8,6 +8,9 @@ body{
     top: 0;
     background-color: black;
 }
+.xx{
+    display: none;
+}
 .head{
     position: sticky;
     top: 0;
@@ -19,8 +22,9 @@ body{
     margin-left: 15%;
     width: 590px;
     height: 9vh;
-    outline: none;
-    background-color: black;
+    background: rgba(0, 0, 0, 0.4);
+   backdrop-filter: blur(10px);
+    border-top: 0;
     
 }
 .son{
@@ -28,6 +32,7 @@ body{
     align-items: center;
     width: 100%;
     height: 9vh;
+    outline: none;
     overflow-x: auto;
     gap: 20px;
     white-space: nowrap;
@@ -49,6 +54,7 @@ body{
 .second{
     margin-left: 60%;
 }
+
 .logo{
     width: 30px;
     padding-top: 20px;
@@ -94,8 +100,13 @@ body{
 .happen{
     font-size: 20px;
     color: #696e72;
+    width: 80%;
+    color: white;
     margin: 10px;
     margin-left: 55px;
+    background-color: black;
+    border: none;
+    outline: none;
 }
 .world{
     width: 20px;
@@ -129,12 +140,9 @@ div button{
 }
 
 .host{
-    background-color: #787a7a;
-    width: 70px;
-    height: 6vh;
-    border-radius: 20px;
-    margin-left: 250px;
-    margin-bottom: ;
+    background-color: white;
+
+   
    
 }
 .rost{
@@ -153,7 +161,7 @@ div button{
     margin-left: 15%;
     border: 1px solid  #232628;
     width: 590px;
-    height: 50vh;
+    height: 72vh;
 }
 .define{
     color: white;
@@ -191,9 +199,79 @@ div img{
     height: 50px;
     border-radius: 100%;
 }
-.loved{
-    width: 530px;
-    height: 20vhvh;
+.box{
+    margin-top: 10px;
+    width: 90%;
+    height: 84vh;
+    margin-left: 15px;
+    background-image: url(https://th.bing.com/th/id/OIP.__k28Nas5RHAsh6UcXwg3QHaE8?w=266&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+}
+div .engagments{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-top: 10px;
+}
+.ments{
+    display: flex;
+    justify-content: end;
+   
+}
+.chat, .repost, .like, .stats, .bookmark, .share{
+    width: 20px;
+    margin-left: 5px;
+    
+    
+}
+.chat{
+    margin-left: 20px;
+}
+.chat:hover path{
+    fill: #1c96e8;
+}
+.repost:hover path{
+    fill: #00ad74;
+}
+.like:hover path{
+    fill: #f91880;
+;
+}
+.stats:hover path{
+    fill: #1c96e8;
+}
+.bookmark:hover path{
+    fill: #1c96e8;
+}
+.share:hover path{
+    fill: #1c96e8;
+}
+.video{
+   width: 100%;
+    height: 47vh;
+    border-radius: 20px;
+}
+.hacker{
+    margin-top: 10px;
+    width: 90%;
+    height: 84vh;
+    margin-left: 15px;
+    background-image: url(https://images.hdqwalls.com/download/anonymous-hoodie-good-or-bad-3n-1125x2436.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+}
+.ghost{
+     margin-top: 10px;
+    width: 90%;
+    height: 84vh;
+    margin-left: 15px;
+    background-image: url(https://wallpapers.com/images/hd/vendetta-mask-hacker-full-hd-esk7rrp14sr7mn65.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
 }
 
 @media (max-width: 700px) {
@@ -208,9 +286,9 @@ div img{
     .head{
         width: 84%;
     }
-    .second{
+     .second{
         margin-left: 40%;
-    }
+    } 
     .word{
         display: none;
     }
@@ -220,4 +298,147 @@ div img{
     .fined{
         width: 84%;
     }
+}
+@media (max-width: 500px) {
+    *{
+        margin: 0;
+    }
+   .parent-container{
+    position: static;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+   }
+   
+   .undefined{
+    margin: auto;
+   }
+   .fined{
+    margin: auto;
+   }
+   .post{
+    margin: auto;
+    display: none;
+   }
+   .head{
+    margin: auto;
+    height: 13vh;
+    position: relative;
+    align-items: end;
+    padding-top:10px;
+    
+   }
+   .son{
+    align-items: end;
+    border: none;
+    
+    
+   }
+
+   .second{
+      display: none;
+       
+
+    }
+    .leave{
+        display: none;
+    }
+    .more{
+        display: none;
+    }
+    .xx{
+        display: flex;
+        position: fixed;
+        top: -17px;
+        left: 200px;
+        margin-top: 10px;
+        
+    }
+    .undefined{
+        width: 100%;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        height: 65vh;
+        border-bottom: 1px solid  #3d4144;
+    }
+    .fined{
+        height: 62vh;
+        width: 100%;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid  #3d4144;
+    }
+    .head{
+        width: 100%;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+     border-bottom: 1px solid  #232628;
+    }
+    .box{
+        margin-top: 10px;
+        width: 75%;
+        height: 50vh;
+        margin-left: 60px;
+        background-image: url(https://th.bing.com/th/id/OIP.__k28Nas5RHAsh6UcXwg3QHaE8?w=266&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3);
+        background-position: center;
+        background-size: cover;
+        border-radius: 20px;
+    }
+    .hacker{
+    margin-top: 10px;
+    width: 75%;
+    height: 50vh;
+    margin-left: 60px;
+    background-image: url(https://images.hdqwalls.com/download/anonymous-hoodie-good-or-bad-3n-1125x2436.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+}
+    .ghost{
+        margin-top: 10px;
+        width: 75%;
+        height: 50vh;
+        margin-left: 60px;
+        background-image: url(https://wallpapers.com/images/hd/vendetta-mask-hacker-full-hd-esk7rrp14sr7mn65.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 20px;
+    }
+    .video{
+        width: 80%;
+        height: 40vh;
+        margin-left: 60px;
+        
+    }
+    .video-container{
+        border-radius: 50px;
+        /* overflow: hidden; */
+    }
+    div .engagments{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    gap: 45px;
+   
+    }
+    .ments{
+        display: flex;
+        justify-content: end;
+        /* padding-left: 100px; */
+    
+    }
+    .chat, .repost, .like, .stats, .bookmark, .share{
+        width: 20px;
+        margin-left: 5px;
+        
+        
+    }
+    .chat{
+        margin-left: 0;
+   }  
 }
