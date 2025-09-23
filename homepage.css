@@ -7,7 +7,9 @@ body{
     height: 100vh;
     top: 0;
     background-color: black;
+    z-index: 3;
 }
+
 .xx{
     display: none;
 }
@@ -18,7 +20,7 @@ body{
     display: flex;
     justify-content: start;
     align-items: center;
-    border: 1px solid #232628;
+    border: 1px solid #31373a;
     margin-left: 15%;
     width: 590px;
     height: 9vh;
@@ -42,7 +44,9 @@ body{
     overflow: hidden;
 }
 .son div{
-    color: #585b5f;
+    padding-top: 13px;
+    color: #6e7378;
+    font-size: 15px;
     font-weight: 600;
     font-family: sans-serif;
 }
@@ -85,8 +89,8 @@ body{
 .post{
     margin-left: 15%;
     width: 590px;
-    height: 30vh;
-    border: 1px solid #232628;
+    height: 33vh;
+    border: 1px solid #31373a;
     outline: none;
 }
 .Everyone{
@@ -96,7 +100,13 @@ body{
     margin: 10px;
     margin-left: 55px;
     text-align: center;
+    outline: none;
 }
+/* select .unity{
+    border: 1px solid green;
+    width: 300px;
+    height: 40vh;
+} */
 .happen{
     font-size: 20px;
     color: #696e72;
@@ -129,19 +139,27 @@ div button{
    
 }
 .line{
-    border: 1px solid #232628;
+    border: 1px solid #31373a;
     width: 85%;
     margin: 10px;
     margin-left: 55px;
 }
 .emoji{
+    display: flex;
+    align-items: center;
+    gap: 20px;
     margin: 10px;
     margin-left: 55px;
 }
 
 .host{
-    background-color: white;
-
+    background-color: #787a7a;
+    width: 80px;
+    height: 6vh;
+    border-radius: 20px;
+    margin-left: 150px;
+   
+    
    
    
 }
@@ -153,21 +171,37 @@ div button{
 }
 .undefined{
     margin-left: 15%;
-    border: 1px solid  #232628;
+    border: 1px solid  #31373a;
     width: 590px;
     height: 100vh;
+    
 }
 .fined{
     margin-left: 15%;
-    border: 1px solid  #232628;
+    border: 1px solid  #31373a;
     width: 590px;
     height: 72vh;
+    
 }
 .define{
     color: white;
     margin-left: 65px;
     font-family: sans-serif;
     font-weight: 700;
+    position: relative;
+}
+
+.no-display{
+    position: absolute;
+    display: block;
+    border: 1px solid white;
+    width: 300px;
+    height: 30vh;
+    display: none;
+}
+.nicolo .no-display:hover{
+    display: block;
+    top: 100px;
 }
 .define:hover{
     text-decoration: underline;
@@ -195,25 +229,26 @@ div img{
     margin-left: 10px;
 }
 .machia{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 100%;
 }
 .box{
     margin-top: 10px;
-    width: 90%;
+    width: 85%;
     height: 84vh;
-    margin-left: 15px;
+    margin-left: 60px;
     background-image: url(https://th.bing.com/th/id/OIP.__k28Nas5RHAsh6UcXwg3QHaE8?w=266&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3);
     background-position: center;
     background-size: cover;
     border-radius: 20px;
 }
 div .engagments{
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
+     display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 10px;
+    gap: 90px;
 }
 .ments{
     display: flex;
@@ -255,9 +290,9 @@ div .engagments{
 }
 .hacker{
     margin-top: 10px;
-    width: 90%;
+    width: 85%;
     height: 84vh;
-    margin-left: 15px;
+    margin-left: 60px;
     background-image: url(https://images.hdqwalls.com/download/anonymous-hoodie-good-or-bad-3n-1125x2436.jpg);
     background-position: center;
     background-size: cover;
@@ -265,14 +300,199 @@ div .engagments{
 }
 .ghost{
      margin-top: 10px;
-    width: 90%;
+    width: 85%;
     height: 84vh;
-    margin-left: 15px;
+    margin-left: 60px;
     background-image: url(https://wallpapers.com/images/hd/vendetta-mask-hacker-full-hd-esk7rrp14sr7mn65.jpg);
     background-position: center;
     background-size: cover;
     border-radius: 20px;
 }
+.video{
+    margin-left: 60px;
+    width: 80%;
+    
+}
+.footer{
+    display: none;
+}
+.daddyy {
+  margin-left: 65%;
+  margin-top: -501.5%;
+  
+}
+.search{
+    border: 1px solid white;
+    width: 360px;
+    height: 9vh;
+    position: fixed;
+    background-color: black;
+    top: 0;
+    z-index: 4;
+    border: none;
+    
+}
+
+.input{
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    top: 6px;
+    align-items: center;
+    font-size: 14px;
+    width: 350px;
+    height: 7.5vh; 
+    background-color: black;
+    border: none;
+    border: 1px solid #31373a;
+    border-radius: 20px;
+    padding-left: 20px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='15'%3E%3Cg%3E%3Cpath fill='gray' d='M10.25 3.75c-3.59 0-6.5 2.91-6.5 6.5s2.91 6.5 6.5 6.5c1.795 0 3.419-.726 4.596-1.904 1.178-1.177 1.904-2.801 1.904-4.596 0-3.59-2.91-6.5-6.5-6.5zm-8.5 6.5c0-4.694 3.806-8.5 8.5-8.5s8.5 3.806 8.5 8.5c0 1.986-.682 3.815-1.824 5.262l4.781 4.781-1.414 1.414-4.781-4.781c-1.447 1.142-3.276 1.824-5.262 1.824-4.694 0-8.5-3.806-8.5-8.5z'/%3E%3C/g%3E%3C/svg%3E") no-repeat left center;
+    padding-left: 30px;
+    background-position: 8px center;
+    color: white;
+
+ 
+    
+}
+.input:focus{
+    border: 2px solid #1c96e8;
+    outline: none;
+}
+
+.mummyy{
+   margin-top: 10px;
+}
+
+
+.subscribe{
+    border: 1px solid #31373a;
+    height: 27vh;
+    width: 350px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    
+   
+}
+.space{
+    border: 1px solid #31373a;
+    height: 50vh;
+    width: 350px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.news{
+    border: 1px solid #31373a;
+    height: 55vh;
+    width: 350px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.currently{
+    border: 1px solid #31373a;
+    height: 75vh;
+    width: 350px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.to{
+    border: 1px solid #31373a;
+    height: 40vh;
+    width: 350px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.premium-unlock{
+    padding: 30px;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+.premium{
+    font-size: 20px;
+    font-weight: 800;
+    color: #e7e6e6;
+   
+   
+}
+.unlock{
+    color: #e7e6e6;
+    font-size: 15px;
+    font-family: sans-serif;
+    line-height: 0 !important;   
+}
+.rive{
+    padding-top: 10px;
+}
+.scripe{
+    border: 1px solid blue;
+    width: 110px;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    background-color: #1d9bf0;
+    cursor: pointer;
+    justify-content: center;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: none;
+    
+}
+.scribe{
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+}
+.ace{
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    font-family: sans-serif;
+}
+.case{
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    
+    
+}
+.side{
+    display: flex;
+    gap: 20px;
+}
+.purple{
+    border: 2px solid #7856ff;
+    width: 130px;
+    height: 6vh;
+    border-radius: 20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 700px) {
     .head{
@@ -298,11 +518,19 @@ div .engagments{
     .fined{
         width: 84%;
     }
+    .not-show{
+        display: none;
+    }
+    .daddyy{
+        display: none;
+    }
 }
 @media (max-width: 500px) {
-    *{
+    body{
         margin: 0;
+        padding: 0;
     }
+
    .parent-container{
     position: static;
     width: 0;
@@ -342,7 +570,16 @@ div .engagments{
 
     }
     .leave{
-        display: none;
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        bottom: 80px;
+        right: 20px;
+        background-color:  #1d9bf0;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .more{
         display: none;
@@ -361,7 +598,8 @@ div .engagments{
         border-left: none;
         border-right: none;
         height: 65vh;
-        border-bottom: 1px solid  #3d4144;
+        border-bottom: 1px solid  #31373a;
+        
     }
     .fined{
         height: 62vh;
@@ -369,14 +607,14 @@ div .engagments{
         border-top: none;
         border-left: none;
         border-right: none;
-        border-bottom: 1px solid  #3d4144;
+        border-bottom: 1px solid  #31373a;
     }
     .head{
         width: 100%;
         border-top: none;
         border-left: none;
         border-right: none;
-     border-bottom: 1px solid  #232628;
+     border-bottom: 1px solid #31373a;
     }
     .box{
         margin-top: 10px;
@@ -387,6 +625,8 @@ div .engagments{
         background-position: center;
         background-size: cover;
         border-radius: 20px;
+       
+        
     }
     .hacker{
     margin-top: 10px;
@@ -415,7 +655,9 @@ div .engagments{
         
     }
     .video-container{
-        border-radius: 50px;
+        /* border: 1px solid white;
+        width: 70%;
+        border-radius: 20px; */
         /* overflow: hidden; */
     }
     div .engagments{
@@ -440,5 +682,36 @@ div .engagments{
     }
     .chat{
         margin-left: 0;
-   }  
+   }
+   .footer{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      height: 7vh;
+      border: 1px solid #31373a;
+      border-left: none;
+      border-right: none;
+      border-bottom: none;
+      background-color: rgba(0, 0, 0, 0.158);
+      z-index: 1000;
+      /* padding-bottom: 10px; */
+   }
+   .not-show{
+    display: none;
+   }
+   .daddyy{
+    display: none;
+   }
+   
+   
+}@media (max-width: 1016px){
+    .not-show{
+        display: none;
+    }
+    .daddyy{
+    display: none;
+    }
 }
