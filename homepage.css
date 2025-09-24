@@ -824,12 +824,7 @@ div .engagments{
         margin-left: 60px;
         
     }
-    .video-container{
-        /* border: 1px solid white;
-        width: 70%;
-        border-radius: 20px; */
-        /* overflow: hidden; */
-    }
+    
     div .engagments{
     display: flex;
     justify-content: center;
