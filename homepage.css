@@ -196,24 +196,16 @@ div button{
 .nicolo:hover .no-display{
     display: block;
     top: 45px;
-       
-}
-.under{
-    color: white;
-    font-size: 19px;
-    font-weight: 700;
-    font-family: cursive;
+    
 }
 .no-display{
     position: absolute;
     border: 1px solid white;
     border: none;
     width: 300px;
-    z-index: 2;
-    height: 50vh;
+    height: zz0vh;
     border-radius: 10px;
     display: none;
-    transition: 1s;
    background-color: black;
     box-shadow: 0 0 10px rgba(162, 159, 159, 0.918);
 }
@@ -617,14 +609,7 @@ div .engagments{
 .mogo{
     width: 30px;
 }
-.pics{
-    margin-top: 65px;
-    margin-left: -13px;
-}
-.pic img{
-    width: 45px;
-    border-radius: 50%;
-}
+
 
 
 
@@ -824,7 +809,12 @@ div .engagments{
         margin-left: 60px;
         
     }
-    
+    .video-container{
+        /* border: 1px solid white;
+        width: 70%;
+        border-radius: 20px; */
+        /* overflow: hidden; */
+    }
     div .engagments{
     display: flex;
     justify-content: center;
