@@ -13,17 +13,37 @@ body{
 .xx{
     display: none;
 }
+.notify{
+    position: absolute;
+    color: #e4e6e7;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 3%;
+    top: -90px;
+    padding-top: 100px;
+    
+}
+.set{
+    position: fixed;
+    top: 0;
+    left: 95%;
+}
+.settings{
+    width: 20px;
+    z-index: 999;
+    padding-top: 15px;
+}
 .head{
     position: sticky;
     top: 0;
     z-index: 1;
     display: flex;
     justify-content: start;
-    align-items: center;
+    align-items: end;
     border: 1px solid #31373a;
     margin-left: 15%;
     width: 590px;
-    height: 9vh;
+    height: 18vh;
     background: rgba(0, 0, 0, 0.4);
    backdrop-filter: blur(10px);
     border-top: 0;
@@ -31,14 +51,15 @@ body{
 }
 .son{
     display: flex;
-    align-items: center;
+    align-items: end;
+    justify-content: space-around;
     width: 100%;
-    height: 9vh;
+    height: 15vh;
     outline: none;
     overflow-x: auto;
-    gap: 20px;
+    
     white-space: nowrap;
-    padding-left: 20px;
+    padding-bottom: 15px;
 }
 .son::-webkit-scrollbar{
     overflow: hidden;
@@ -47,13 +68,15 @@ body{
     padding-top: 13px;
     color: #6e7378;
     font-size: 15px;
-    font-weight: 600;
-    font-family: sans-serif;
+    font-weight: 540;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .son div:hover{
     color: white;
     font-weight: 700;
     font-family: sans-serif;
+   
+
 }
 .second{
     margin-left: 60%;
@@ -90,20 +113,17 @@ body{
     margin-left: 15%;
     border: 1px solid  #31373a;
     width: 590px;
-    height: 100vh;
+    height: 40vh;
     
 }
 .fined{
     margin-left: 15%;
     border: 1px solid  #31373a;
     width: 590px;
-    height: 72vh;
+    height: 32vh;
     
 }
-.daddyy {
-  margin-left: 65%;
-  margin-top: -854.5%; 
-}
+
 
 
 .search{
@@ -144,17 +164,20 @@ body{
     border: 2px solid #1c96e8;
     outline: none;
 }
-
+.daddyy {
+  margin-left: 65%;
+  margin-top: -140%; 
+}
 .mummyy{
    margin-top: 7px;
-   height: 500px;
+   height: 600px;
    border: 1px solid white;
    width: 450px;
    height: 90vh;
    position: fixed;
    overflow: auto;
    border-radius: 10px;
-   border: none;
+   border: none; 
  
 }
 .mummyy::-webkit-scrollbar{
@@ -257,14 +280,14 @@ body{
     gap: 20px;
 }
 .purple{
-    border: 2px solid #7856ff;
+    border: 2px solid #f91880;
     width: 130px;
     height: 6vh;
-    border-radius: 20px;
+    
     display: flex;
    
     justify-content: flex-start;
-    gap: 20px; 
+    /* gap: 20px;  */
 }
  .purple img{
   width: 30px;
@@ -280,7 +303,7 @@ body{
     font-weight: bold;
     position: absolute;
     z-index: 3;
-    right: 130px;
+    right: 120px;
 }
 .free{
     padding-top: 25px;
@@ -310,7 +333,7 @@ body{
 .turple{
     display: flex;
     justify-content: flex-start;
-    gap: 120px;
+    
 }
 .lace{
     font-size: 15px;
@@ -378,10 +401,228 @@ body{
 }
 .pics{
     margin-top: 65px;
-    margin-left: -13px;
+    margin-left: -5px;
 }
 .pic img{
-    width: 45px;
+    width: 40px;
     border-radius: 50%;
 }
+.world{
+    width: 25px;   
+}
+.username{
+   font-size: 15px;
+    color: gray;
+    font-weight: 400;  
+}
+.premium-lock{
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.bef{
+    color: white;
+}
+.bef img{
+    width: 40px;
+    border-radius: 50%;
+}
+.twoo{
+   width: 30px;
+}
+.footer{
+    display: none;
+}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1016px){
+    .not-show{
+        display: none;
+    }
+    .daddyy{
+    display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .head{
+        width: 100%;
+    }
+    .post{
+        width: 84%;
+    }
+}
+@media (max-width: 706px) {
+    .head{
+        width: 84%;
+    }
+     .second{
+        margin-left: 40%;
+    } 
+    .word{
+        display: none;
+    }
+    .undefined{
+        width: 84%;
+    }
+    .fined{
+        width: 84%;
+    }
+    .notify{
+        width: 84%;
+    }
+    .not-show{
+        display: none;
+    }
+    .daddyy{
+        display: none;
+    }
+    .set{
+    position: fixed;
+    z-index: 999;
+    left: 93%;
+    }
+}
+@media (max-width: 500px) {
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .bobby{
+        display: none;
+    }
+
+   .parent-container{
+    position: static;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+   }
+  
+   .undefined{
+    margin: auto;
+   }
+   .fined{
+    margin: auto;
+   }
+   .post{
+    margin: auto;
+    display: none;
+   }
+   .head{
+    margin: auto;
+    height: 18vh;
+    position: relative;
+    align-items: end;
+    padding-top:10px;
+    
+   }
+   .son{
+    align-items: end;
+    border: none;
+    
+    
+   }
+
+   .second{
+      display: none;
+       
+
+    }
+    .leave{
+        width: 55px;
+        height: 55px;
+        position: fixed;
+        bottom: 65px;
+        right: 20px;
+        background-color:  #1d9bf0;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .more{
+        display: none;
+    }
+    .undefined{
+        width: 100%;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        height: 40vh;
+        border-bottom: 1px solid  #31373a;
+        
+    }
+    .fined{
+        height: 32vh;
+        width: 100%;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid  #31373a;
+    }
+    .head{
+        width: 100%;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+     border-bottom: 1px solid #31373a;
+    }
+    
+   .footer{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      height: 7vh;
+      border: 1px solid #31373a;
+      border-left: none;
+      border-right: none;
+      border-bottom: none;
+      background-color: rgba(0, 0, 0, 0.158);
+      z-index: 1000;
+      /* padding-bottom: 10px; */
+   }
+   .not-show{
+    display: none;
+   }
+   .daddyy{
+    display: none;
+   }
+   .nicolo:hover .no-display{
+    display: none;
+   }
+   .notify{
+    margin-left: 15%;
+   }
+   .set{
+    position: absolute;
+    z-index: 999;
+    left: 93%;
+    }
+}   
