@@ -651,12 +651,12 @@ div .engagments{
         width: 100%;
     }
     .post{
-        width: 84%;
+        width: 85%;
     }
 }
 @media (max-width: 706px) {
     .head{
-        width: 84%;
+        width: 85%;
     }
      .second{
         margin-left: 40%;
@@ -665,10 +665,10 @@ div .engagments{
         display: none;
     }
     .undefined{
-        width: 84%;
+        width: 85%;
     }
     .fined{
-        width: 84%;
+        width: 85%;
     }
     .not-show{
         display: none;
@@ -819,12 +819,7 @@ div .engagments{
         margin-left: 60px;
         
     }
-    .video-container{
-        /* border: 1px solid white;
-        width: 70%;
-        border-radius: 20px; */
-        /* overflow: hidden; */
-    }
+
     div .engagments{
     display: flex;
     justify-content: center;
