@@ -1,5 +1,6 @@
 body{
     background-color: black;
+   
 }
 .parent-container{
     position: fixed;
@@ -68,7 +69,6 @@ body{
     height: 15vh;
     outline: none;
     overflow-x: auto;
-    
     white-space: nowrap;
     padding-bottom: 15px;
 }
@@ -104,9 +104,7 @@ body{
     border-radius: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    
-   
+    justify-content: center;  
 }
 .rogo{
     width: 30px;
@@ -124,7 +122,7 @@ body{
     margin-left: 15%;
     border: 1px solid  #31373a;
     width: 400px;
-    height: 95vh;
+    height: 105vh;
     border-top: 0;
     overflow-y: scroll;
     overscroll-behavior-y: none;
@@ -364,11 +362,13 @@ body{
     border-radius: 20px;
     align-items: center;
    box-shadow: 0 0 10px rgba(162, 159, 159, 0.918);
-
-   
+  
 }
 .mogo{
     width: 30px;
+}
+.oic{
+    display: none;
 }
 .pics{
     margin-top: 65px;
@@ -388,12 +388,11 @@ body{
 }
 .premium-ock{
     margin-top: 15px; 
-  
     padding-top: 10px;
 }
 .premium-lock{
     margin-top: 15px;
-   margin-left: 3%;
+    margin-left: 3%;
     padding-top: 10px;
 }
 .bef{
@@ -428,7 +427,7 @@ body{
     color: white;
     font-family: inter, sans-serif;
 }
-.tunt:focus{
+.tunt:focus-within{
     border: 2px solid #1c96e8;
     outline: none;
 }
@@ -454,8 +453,8 @@ body{
      background-color:  rgb(22, 24, 28);
 }
 .beta{
-    position: absolute;
-    right: 700px;
+    position: relative;
+    right: -200px;
     border: 1px solid white;
    width: 40px;
    height: 3vh;
@@ -498,10 +497,10 @@ body{
     border-left: 0;
     border-top: 0;
     width: 46%;
-    position: absolute;
+    position: fixed;
     right: 90px;
     top: 0;
-    height: 103vh;
+    height: 108vh;
     padding: 0;
 }
 .newmessage{
@@ -524,7 +523,8 @@ body{
 
 
 
-@media (max-width: 1016px){
+
+@media (max-width: 1024px){
     .not-show{
         display: none;
     }
@@ -541,9 +541,23 @@ body{
         display: none;
     }
      .beta{
-    position: absolute;
-    right: 190px;
+    position: relative;
+    right: -400px;
     }
+    .undefined{
+        height: auto;
+        overflow: hidden;
+      
+        padding: 0;
+    }
+    .premium-Rock{
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .pics{
+        margin-top: 470px;
+    }
+
 }
 
 @media (max-width: 700px) {
@@ -559,8 +573,12 @@ body{
     }
     
    .undefined{
+    height: auto;
     overflow: hidden;
    }
+   
+  
+   
 }
 @media (max-width: 706px) {
     .head{
@@ -642,6 +660,10 @@ body{
    
     
    }
+   .oic{
+    display: block;
+    }
+  
    .son{
     align-items: end;
     border: none;
