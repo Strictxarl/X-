@@ -60,8 +60,12 @@ body{
 }
 
 .logo{
-    width: 30px;
-    padding-top: 20px;
+    width: 26px;
+    
+    padding-top: 23px;
+}
+.sogo{
+    display: none;
 }
 .leave{
     width: 50px;
@@ -611,7 +615,8 @@ div .engagments{
     width: 30px;
 }
 .pics{
-    margin-top: 65px;
+    display: block !important;
+    margin-top: 65px !important;
     margin-left: -18px;
 }
 .pic img{
@@ -624,6 +629,9 @@ div .engagments{
     font-family: cursive;
     font-size: 19px;
 }
+.tics{
+    display: none;
+}
 
 
 
@@ -645,13 +653,43 @@ div .engagments{
 
 
 
-
+@media (max-width: 1024px){
+    .not-show{
+        display: none;
+    }
+    .daddyy{
+    display: none;
+    }
+    .medium-container{
+        margin-left: 0.5%;
+    }
+   .sogo{
+    display: block;
+    width: 26px;
+    padding-top: 23px
+   }
+    .tics{
+        display: block;
+        margin-top: 270px;
+        margin-left: -18px !important;
+    }
+    .pics{
+        display: none !important;
+    }
+   
+}
 @media (max-width: 700px) {
     .head{
         width: 100%;
     }
     .post{
         width: 85%;
+    }
+    .sogo{
+        display: none;
+    }
+    .pics{
+        display: block !important;
     }
 }
 @media (max-width: 706px) {
@@ -676,8 +714,11 @@ div .engagments{
     .daddyy{
         display: none;
     }
+    .sogo{
+        display: none !important;
+    }
 }
-@media (max-width: 500px) {
+@media (max-width: 500px ) {
     body{
         margin: 0;
         padding: 0;
@@ -718,6 +759,9 @@ div .engagments{
     
     
    }
+   .sogo{
+    display: none;
+   }
 
    .second{
       display: none;
@@ -752,7 +796,7 @@ div .engagments{
         border-top: none;
         border-left: none;
         border-right: none;
-        height: 65vh;
+        height: 45vh;
         border-bottom: 1px solid  #31373a;
         
     }
@@ -774,7 +818,7 @@ div .engagments{
     .box{
         margin-top: 10px;
         width: 75%;
-        height: 50vh;
+        height: 30vh;
         margin-left: 60px;
         background-image: url(https://th.bing.com/th/id/OIP.__k28Nas5RHAsh6UcXwg3QHaE8?w=266&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3);
         background-position: center;
@@ -786,7 +830,7 @@ div .engagments{
     .hacker{
     margin-top: 10px;
     width: 75%;
-    height: 50vh;
+    height: 30vh;
     margin-left: 60px;
     background-image: url(https://images.hdqwalls.com/download/anonymous-hoodie-good-or-bad-3n-1125x2436.jpg);
     background-position: center;
@@ -796,7 +840,7 @@ div .engagments{
     .ghost{
         margin-top: 10px;
         width: 75%;
-        height: 50vh;
+        height: 30vh;
         margin-left: 60px;
         background-image: url(https://wallpapers.com/images/hd/vendetta-mask-hacker-full-hd-esk7rrp14sr7mn65.jpg);
         background-position: center;
@@ -806,7 +850,7 @@ div .engagments{
     .samsung{
         margin-top: 10px;
         width: 75%;
-        height: 50vh;
+        height: 30vh;
         margin-left: 60px;
         background-image: url("X VIDEOS AND IMAGES/thirtheen.jpeg");
         background-position: center;
@@ -871,11 +915,4 @@ div .engagments{
 }
    
    
-}@media (max-width: 1016px){
-    .not-show{
-        display: none;
-    }
-    .daddyy{
-    display: none;
-    }
 }

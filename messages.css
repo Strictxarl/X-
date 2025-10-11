@@ -94,8 +94,8 @@ body{
 }
 
 .logo{
-    width: 30px;
-    padding-top: 20px;
+    width: 26px;
+    padding-top: 23px;
 }
 .leave{
     width: 50px;
@@ -371,12 +371,16 @@ body{
     display: none;
 }
 .pics{
-    margin-top: 65px;
+    display: block !important;
+    margin-top: 65px !important;
     margin-left: -5px;
 }
 .pic img{
     width: 40px;
     border-radius: 50%;
+}
+.sogo{
+    display: none;
 }
 .world{
     width: 25px;   
@@ -509,7 +513,9 @@ body{
 .newmessage:hover{
     background-color:  #3693d0;
 }
-
+.tics{
+    display: none;
+}
 
 
 
@@ -554,8 +560,21 @@ body{
         margin-top: 0;
         padding-top: 0;
     }
+    .tics{
+        display: block;
+        margin-top: 270px;
+        margin-left: -5px !important;
+    }
     .pics{
-        margin-top: 470px;
+        display: none !important;
+    }
+    .sogo{
+    display: block;
+    width: 26px;
+    padding-top: 23px
+   }
+   .medium-container{
+        margin-left: 0.5%;
     }
 
 }
@@ -571,7 +590,12 @@ body{
     position: absolute;
     right: 34px;
     }
-    
+    .pics{
+        display: block !important;
+    }
+    .sogo{
+        display: none;
+    }
    .undefined{
     height: auto;
     overflow: hidden;
@@ -584,6 +608,9 @@ body{
     .head{
         width: 85%;
         
+    }
+    .sogo{
+        display: none !important;
     }
      .second{
         margin-left: 40%;

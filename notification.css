@@ -73,8 +73,13 @@ body{
 }
 .son div:hover{
     color: white;
-    font-weight: 700;
-    font-family: sans-serif;
+   border: 1px solid white;
+   display: flex;
+   justify-content: center;
+   
+   width: 100px;
+   background-color: lightgrey;
+   border: none;
    
 
 }
@@ -86,8 +91,11 @@ body{
 }
 
 .logo{
-    width: 30px;
-    padding-top: 20px;
+    width: 26px;
+    padding-top: 23px;
+}
+.sogo{
+    display: none;
 }
 .leave{
     width: 50px;
@@ -403,9 +411,14 @@ body{
     width: 30px;
 }
 .pics{
-    margin-top: 65px;
+    display: block !important;
+    margin-top: 65px !important;
     margin-left: -5px;
 }
+.tics{
+    display: none;
+}
+
 .pic img{
     width: 40px;
     border-radius: 50%;
@@ -460,12 +473,28 @@ body{
 
 
 
-@media (max-width: 1016px){
+@media (max-width: 1024px){
     .not-show{
         display: none;
     }
     .daddyy{
     display: none;
+    }
+    .sogo{
+    display: block;
+    width: 26px;
+    padding-top: 23px
+   }
+   .tics{
+        display: block;
+        margin-top: 270px;
+        margin-left: -5px !important;
+    }
+    .pics{
+        display: none !important;
+    }
+    .medium-container{
+        margin-left: 0.5%;
     }
 }
 
@@ -476,6 +505,13 @@ body{
     .post{
         width: 84%;
     }
+    .sogo{
+        display: none;
+    }
+    .pics{
+        display: block !important;
+    }
+   
 }
 @media (max-width: 706px) {
     .head{
@@ -492,6 +528,9 @@ body{
     }
     .fined{
         width: 85%;
+    }
+    .sogo{
+        display: none !important;
     }
     .notify{
         width: 84%;
@@ -548,6 +587,9 @@ body{
     border: none;
     
     
+   }
+   .sogo{
+    display: none;
    }
    .oic{
     display: block;
