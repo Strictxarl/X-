@@ -1,6 +1,6 @@
 body{
     background-color: black;
-   
+    
 }
 .parent-container{
     position: fixed;
@@ -27,19 +27,9 @@ body{
 .set{
     position: fixed;
     top: 0;
-    left: 83%;
+    left: 95%;
 }
 .settings{
-    width: 20px;
-    z-index: 999;
-    padding-top: 15px;
-}
-.plus{
-    position: fixed;
-    top: 0;
-    left: 92%;
-}
-.pluss{
     width: 20px;
     z-index: 999;
     padding-top: 15px;
@@ -47,18 +37,17 @@ body{
 .head{
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 3;
     display: flex;
     justify-content: start;
     align-items: end;
     border: 1px solid #31373a;
     margin-left: 15%;
-    width: 400px;
-    height: 8vh;
+    width: 590px;
+    height: 18vh;
     background: rgba(0, 0, 0, 0.4);
    backdrop-filter: blur(10px);
     border-top: 0;
-     border-bottom: 0;
     
 }
 .son{
@@ -69,8 +58,9 @@ body{
     height: 15vh;
     outline: none;
     overflow-x: auto;
+   
     white-space: nowrap;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
 }
 .son::-webkit-scrollbar{
     overflow: hidden;
@@ -84,10 +74,18 @@ body{
 }
 .son div:hover{
     color: white;
-    font-weight: 700;
-    font-family: sans-serif;
+   border: 1px solid white;
+   display: flex;
+   justify-content: center;
+   
+   width: 100px;
+   background-color: lightgrey;
+   border: none;
    
 
+}
+.oic{
+    display: none;
 }
 .second{
     margin-left: 60%;
@@ -97,6 +95,9 @@ body{
     width: 26px;
     padding-top: 23px;
 }
+.sogo{
+    display: none;
+}
 .leave{
     width: 50px;
     height: 50px;
@@ -104,7 +105,9 @@ body{
     border-radius: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;  
+    justify-content: center;
+    
+   
 }
 .rogo{
     width: 30px;
@@ -121,21 +124,73 @@ body{
 .undefined{
     margin-left: 15%;
     border: 1px solid  #31373a;
-    width: 400px;
-    height: 105vh;
-    border-top: 0;
-    overflow-y: scroll;
-    overscroll-behavior-y: none;
-    font-size: 15px;
-    color-scheme: dark;
-    scrollbar-color: rgb(62, 65, 68) rgb(22, 24, 28);
-    outline: none;
-
+    width: 590px;
+    height: auto;
+    padding-bottom: 20px;
+    
+}
+.fined{
+    margin-left: 15%;
+    border: 1px solid  #31373a;
+    width: 590px;
+    height: auto;
+    
+}
+.teach{
+    border: 1px solid white;
+    width: 85%;
+    height: 7.5vh;
+    border-radius: 20px;
+    position: fixed;
+    background-color: black;
+    top: 5px;
+    z-index: 999;
+    border: none;
 }
 
+
+.search{
+    border: 1px solid white;
+    width: 360px;
+    height: 4vh;
+    position: fixed;
+    background-color: black;
+    top: 0;
+    z-index: 999;
+    border: none;
+    border-bottom: 1px solid #31373a;
+    
+}
+
+.input{
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    top: 6px;
+    align-items: center;
+    font-size: 14px;
+    width: 350px;
+    height: 7.5vh; 
+    background-color: black;
+    border: none;
+    border: 1px solid #31373a;
+    border-radius: 20px;
+    padding-left: 20px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='15'%3E%3Cg%3E%3Cpath fill='gray' d='M10.25 3.75c-3.59 0-6.5 2.91-6.5 6.5s2.91 6.5 6.5 6.5c1.795 0 3.419-.726 4.596-1.904 1.178-1.177 1.904-2.801 1.904-4.596 0-3.59-2.91-6.5-6.5-6.5zm-8.5 6.5c0-4.694 3.806-8.5 8.5-8.5s8.5 3.806 8.5 8.5c0 1.986-.682 3.815-1.824 5.262l4.781 4.781-1.414 1.414-4.781-4.781c-1.447 1.142-3.276 1.824-5.262 1.824-4.694 0-8.5-3.806-8.5-8.5z'/%3E%3C/g%3E%3C/svg%3E") no-repeat left center;
+    padding-left: 30px;
+    background-position: 8px center;
+    color: white;
+
+ 
+    
+}
+.input:focus{
+    border: 2px solid #1c96e8;
+    outline: none;
+}
 .daddyy {
   margin-left: 65%;
-  margin-top: -140%; 
+  margin-top: -800vh;
 }
 .mummyy{
    margin-top: 7px;
@@ -152,15 +207,6 @@ body{
 .mummyy::-webkit-scrollbar{
     overflow: hidden;
 }
-.subscribe{
-    border: 1px solid #31373a;
-    height: 27vh;
-    width: 350px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    
-   
-}
 .space{
     border: 1px solid #31373a;
     height: 50vh;
@@ -175,13 +221,7 @@ body{
     border-radius: 20px;
     margin-bottom: 20px;
 }
-.currently{
-    border: 1px solid #31373a;
-    height: 75vh;
-    width: 350px;
-    border-radius: 20px;
-    margin-bottom: 20px;
-}
+
 .to{
     border: 1px solid #31373a;
     height: 40vh;
@@ -248,7 +288,7 @@ body{
     display: flex;
     gap: 20px;
 }
-.purple{
+/* .purple{
     border: 2px solid #f91880;
     width: 130px;
     height: 6vh;
@@ -256,17 +296,17 @@ body{
     display: flex;
    
     justify-content: flex-start;
-    /* gap: 20px;  */
-}
+    gap: 20px; 
+} */
  .purple img{
   width: 30px;
   height: 30px;
   border-radius: 50%; 
 }
-.dds img{
+/* .dds img{
     margin-left: 0;
-    padding-left: 0;
-}
+    padding-left: -10px;
+}  */
 .yip{
     color: white;
     font-weight: bold;
@@ -275,7 +315,7 @@ body{
     right: 120px;
 }
 .free{
-    padding-top: 25px;
+    padding-top: 15px;
     color: white;
     font-family: sans-serif;
     font-weight: 700;
@@ -284,17 +324,18 @@ body{
 .Surple{
     display: flex;
     justify-content: flex-start;
-    gap: 20px; 
+   
 }
 .Surple img{
     width: 30px;
     height: 30px;
     border-radius: 50%;
+    
 }
 .orts{
     color: gray;
     font-size: 13px;
-    margin-left: 20px;
+    margin-left: 15px;
 }
 .wooo img{
     border-radius: 20px;
@@ -317,14 +358,14 @@ body{
 .ree{
     padding-top: 25px;
     display: flex;
-    gap: 165px;
+    justify-content: space-between;
 }
 .cod{
     width: 20px;
 }
 .tide{
     display: flex;
-    gap: 180px;
+    justify-content: space-between;
 }
 .yupu{
     border: 2px solid white;
@@ -336,7 +377,7 @@ body{
     justify-content: center;
     align-items: center;
     gap: 20px; 
-    margin-top: -20px;
+    /* margin-top: -20px; */
 }
 .yeah{
     font-size: 14px;
@@ -362,25 +403,24 @@ body{
     border-radius: 20px;
     align-items: center;
    box-shadow: 0 0 10px rgba(162, 159, 159, 0.918);
-  
+
+   
 }
 .mogo{
     width: 30px;
-}
-.oic{
-    display: none;
 }
 .pics{
     display: block !important;
     margin-top: 65px !important;
     margin-left: -5px;
 }
+.tics{
+    display: none;
+}
+
 .pic img{
     width: 40px;
     border-radius: 50%;
-}
-.sogo{
-    display: none;
 }
 .world{
     width: 18px;   
@@ -390,13 +430,8 @@ body{
     color: gray;
     font-weight: 400;  
 }
-.premium-ock{
-    margin-top: 15px; 
-    padding-top: 10px;
-}
 .premium-lock{
-    margin-top: 15px;
-    margin-left: 3%;
+    padding-left: 20px;
     padding-top: 10px;
 }
 .bef{
@@ -413,111 +448,150 @@ body{
     display: none;
 }
 
-.tunt{
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    width: 97%;
-    height: 7.5vh; 
-    cursor: pointer;
-    background-color: black;
-    border: none;
-    border: 1px solid #31373a;
-    border-radius: 20px;
-    padding-left: 20px;
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='15'%3E%3Cg%3E%3Cpath fill='gray' d='M10.25 3.75c-3.59 0-6.5 2.91-6.5 6.5s2.91 6.5 6.5 6.5c1.795 0 3.419-.726 4.596-1.904 1.178-1.177 1.904-2.801 1.904-4.596 0-3.59-2.91-6.5-6.5-6.5zm-8.5 6.5c0-4.694 3.806-8.5 8.5-8.5s8.5 3.806 8.5 8.5c0 1.986-.682 3.815-1.824 5.262l4.781 4.781-1.414 1.414-4.781-4.781c-1.447 1.142-3.276 1.824-5.262 1.824-4.694 0-8.5-3.806-8.5-8.5z'/%3E%3C/g%3E%3C/svg%3E") no-repeat left center;
-    padding-left: 30px;
-    background-position: 8px center;
-    color: white;
-    font-family: inter, sans-serif;
+.axios{
+   position: absolute;
+  top: 100px;
+  height: 57vh;
+  width: 590px;
+  display: block !important;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.87), rgba(0, 0, 0, 0.01));
+  z-index: 1;
+    color: white;  padding-left: 20px; ; display: flex; align-items: flex-end;
 }
-.tunt:focus-within{
-    border: 2px solid #1c96e8;
-    outline: none;
-}
-.tint{
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    width: 100%;
-    height: 12vh; 
-    border: 1px solid #31373a;
-    background-color: black;
-    padding-left: 20px;
-    background-position: 8px center;
-    color: white;
-    font-size: 17px;
-    gap: 20px;
-    cursor: pointer;
-    border: none;
-    font-weight: 700;
-    font-family: inter, sans-serif;
-}
-.tint:hover{
-     background-color:  rgb(22, 24, 28);
-}
-.beta{
+.nicolo{
     position: relative;
-    right: -200px;
+}
+.define{
+    color: white;
+    margin-left: 10px;
+    font-family: sans-serif;
+    font-weight: 700;
+    /* position: relative; */
+}
+.nicolo:hover .no-display{
+    display: block;
+    top: 45px;
+    
+}
+.no-display{
+    position: absolute;
     border: 1px solid white;
-   width: 40px;
-   height: 3vh;
-   border-radius: 3px;
-   background-color: #1d9bf0;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+    border: none;
+    width: 300px;
+    z-index: 2;
+    border-radius: 10px;
+    display: none;
+   background-color: black;
+    box-shadow: 0 0 10px rgba(162, 159, 159, 0.918);
+}
+
+.define:hover{
+    text-decoration: underline;
+}
+.username{
+    font-size: 15px;
+    color: gray;
+    font-weight: 400;  
+}
+.username:hover{
+    text-decoration: none;
+}
+.twitter-tweet{
+    margin-left: 15%;
    border: none;
 }
-.eta{
-    font-size: 13px;
-    font-weight: 400;
-}
-.mess{
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    width: 100%;
-    height: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border: 1px solid #31373a;
-    background-color: black;
-    padding-left: 20px;
-    background-position: 8px center;
+.inner{
     color: white;
-    font-size: 17px;
-    gap: 10px;
-    font-weight: 700;
-    cursor: pointer;
-    border: none;
-    font-family: inter, sans-serif;
+    margin-left: 50px;
+    font-family: sans-serif;
+    font-size: 15px;
 }
 
-.mess:hover{
-    background-color:  rgb(22, 24, 28);
+.machia{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+.under{
+    color: white;
+    font-family: cursive;
+    font-size: 19px;
+}
+.ox{
+    margin-top: 10px;
+    width: 60%;
+    height: 70vh;
+    margin-left: 50px;
+    background-image: url("X VIDEOS AND IMAGES/G3PI5BnXsAAIAYb.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px; 
+}
+.box{
+     margin-top: 10px;
+    width: 60%;
+    height: 70vh;
+    margin-left: 50px;
+    background-image: url("X VIDEOS AND IMAGES/G3O7LByWAAAQfhr.jfif");
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px; 
+}
+/* .tox{
+
+}
+.cox{
+
+} */
+div .engagments{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    gap: 90px;
+}
+.ments{
+    display: flex;
+    justify-content: end;
+   
+}
+.chat, .repost, .like, .stats, .bookmark, .share{
+    width: 20px;
+    margin-left: 5px;
+    
+    
 }
 
-.never{
-    border: 1px solid  #31373a;
-    border-left: 0;
-    border-top: 0;
-    width: 46%;
-    position: fixed;
-    right: 90px;
-    top: 0;
-    height: 108vh;
-    padding: 0;
+.chat{
+    margin-left: 20px;
 }
-.newmessage{
-    width: 175px; height: 8.5vh; margin-top: 20px; border-radius: 25px; background-color: #1d9bf0; color: white; border: none; font-weight: 700; font-size: 17px;
+.chat:hover path{
+    fill: #1c96e8;
 }
-.newmessage:hover{
-    background-color:  #3693d0;
+.repost:hover path{
+    fill: #00ad74;
 }
-.tics{
-    display: none;
+.like:hover path{
+    fill: #f91880;
+;
 }
+.stats:hover path{
+    fill: #1c96e8;
+}
+.bookmark:hover path{
+    fill: #1c96e8;
+}
+.share:hover path{
+    fill: #1c96e8;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -539,30 +613,12 @@ body{
     .daddyy{
     display: none;
     }
-    .undefined{
-        width: 600px;
-    }
-    .head{
-        width: 600px;
-    }
-    .never{
-        display: none;
-    }
-     .beta{
-    position: relative;
-    right: -400px;
-    }
-    .undefined{
-        height: auto;
-        overflow: hidden;
-      
-        padding: 0;
-    }
-    .premium-Rock{
-        margin-top: 0;
-        padding-top: 0;
-    }
-    .tics{
+    .sogo{
+    display: block;
+    width: 26px;
+    padding-top: 23px
+   }
+   .tics{
         display: block;
         margin-top: 270px;
         margin-left: -5px !important;
@@ -570,16 +626,18 @@ body{
     .pics{
         display: none !important;
     }
-    .sogo{
-    display: block;
-    width: 26px;
-    padding-top: 23px
-   }
-   .medium-container{
+    .medium-container{
         margin-left: 0.5%;
     }
-
+    
+    .undefined{
+        height: auto;
+    }
+    .axios{
+        display: none ;
+    }
 }
+
 
 @media (max-width: 700px) {
     .head{
@@ -588,31 +646,18 @@ body{
     .post{
         width: 84%;
     }
-    .beta{
-    position: absolute;
-    right: 34px;
+    .sogo{
+        display: none;
     }
     .pics{
         display: block !important;
     }
-    .sogo{
-        display: none;
-    }
-   .undefined{
-    height: auto;
-    overflow: hidden;
-   }
-   
-  
+    
    
 }
 @media (max-width: 706px) {
     .head{
         width: 85%;
-        
-    }
-    .sogo{
-        display: none !important;
     }
      .second{
         margin-left: 40%;
@@ -623,13 +668,19 @@ body{
     .undefined{
         width: 85%;
     }
+     .axios{
+        width: 84.5%;
+       position: absolute;
+       top: 102px;
+       height: 51vh;
+       
+    } 
     .fined{
-        width: 84%;
+        width: 85%;
     }
-    .beta{
-    position: absolute;
-    right: 34px;
-   }
+    .sogo{
+        display: none !important;
+    }
     .notify{
         width: 84%;
     }
@@ -642,12 +693,25 @@ body{
     .set{
     position: fixed;
     z-index: 999;
-    left: 86%;
+    left: 93%;
     }
-    .plus{
-        position: fixed;
-        z-index: 999;
-        left: 93%;
+    
+}
+@media (min-width: 706px) and (max-width: 1024px) {
+     .ox{
+        height: 35vh;
+    }
+    .box{
+        height: 35vh;
+    }
+    .tox{
+        height: 35vh;
+    }
+    .cox{
+        height: 35vh;
+    }
+    .yupu{
+        height: 4vh;
     }
 }
 @media (max-width: 500px) {
@@ -655,10 +719,31 @@ body{
         margin: 0;
         padding: 0;
     }
+    .input{
+        height: 6vh;
+        width: 65% !important;
+    }
+    .ox{
+        height: 35vh;
+    }
+    .box{
+        height: 35vh;
+    }
+    .tox{
+        height: 35vh;
+    }
+    .cox{
+        height: 35vh;
+    }
+    .yupu{
+        height: 4vh;
+    }
+    .axios{
+        display: none !important;
+    }
     .bobby{
         display: none;
     }
-
 
    .parent-container{
     position: static;
@@ -667,9 +752,7 @@ body{
     margin: 0;
     padding: 0;
    }
-   .premium-lock{
-    margin-top: 0;
-   }
+  
    .undefined{
     margin: auto;
    }
@@ -682,26 +765,23 @@ body{
    }
    .head{
     margin: auto;
-    height: 8vh;
+    height: 18vh;
     position: relative;
     align-items: end;
     padding-top:10px;
-   
     
    }
-   .oic{
-    display: block;
-    }
-  
    .son{
     align-items: end;
     border: none;
     
     
    }
-   .tunt{
-      position: absolute;
-      top: 5px;
+   .sogo{
+    display: none;
+   }
+   .oic{
+    display: block;
    }
    .second{
       display: none;
@@ -728,13 +808,11 @@ body{
         border-top: none;
         border-left: none;
         border-right: none;
-        height: auto;
-       
-        border-bottom: none;
-        overflow: hidden;
+       height: auto;
+        border-bottom: 1px solid  #31373a;
+        
     }
     .fined{
-        
         height: 32vh;
         width: 100%;
         border-top: none;
@@ -747,7 +825,7 @@ body{
         border-top: none;
         border-left: none;
         border-right: none;
-     border-bottom: none;
+     border-bottom: 1px solid #31373a;
     }
     
    .footer{
@@ -779,13 +857,31 @@ body{
     margin-left: 15%;
    }
    .set{
-    position: fixed;
+    position: absolute;
     z-index: 999;
-    left: 81%;
+    left: 93%;
     }
-    .plus{
-        position: fixed;
-        z-index: 999;
-        left: 91%;
+    div .engagments{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    gap: 45px;
+   
     }
+    .ments{
+        display: flex;
+        justify-content: end;
+        /* padding-left: 100px; */
+    
+    }
+    .chat, .repost, .like, .stats, .bookmark, .share{
+        width: 20px;
+        margin-left: 5px;
+        
+        
+    }
+    .chat{
+        margin-left: 0;
+   }
 }   

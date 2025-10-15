@@ -124,14 +124,16 @@ body{
     margin-left: 15%;
     border: 1px solid  #31373a;
     width: 590px;
-    height: 40vh;
+    height: auto;
+    padding-bottom: 20px;
     
 }
 .fined{
     margin-left: 15%;
     border: 1px solid  #31373a;
     width: 590px;
-    height: 32vh;
+    height: auto;
+    padding-bottom: 20px;
     
 }
 
@@ -424,7 +426,7 @@ body{
     border-radius: 50%;
 }
 .world{
-    width: 25px;   
+    width: 18px;   
 }
 .username{
    font-size: 15px;
@@ -619,12 +621,12 @@ body{
         border-top: none;
         border-left: none;
         border-right: none;
-        height: 40vh;
+        height: auto;
         border-bottom: 1px solid  #31373a;
         
     }
     .fined{
-        height: 32vh;
+        height: auto;
         width: 100%;
         border-top: none;
         border-left: none;
