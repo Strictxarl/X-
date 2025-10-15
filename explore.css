@@ -151,7 +151,7 @@ body{
 
 .search{
     border: 1px solid white;
-    width: 360px;
+    width: 350px;
     height: 4vh;
     position: fixed;
     background-color: black;
@@ -188,12 +188,12 @@ body{
     border: 2px solid #1c96e8;
     outline: none;
 }
-.daddyy {
+/* .daddyy {
   margin-left: 65%;
   margin-top: -800vh;
-}
+} */
 .mummyy{
-   margin-top: 7px;
+   margin-top: 40px;
    height: 600px;
    border: 1px solid white;
    width: 450px;
@@ -209,14 +209,14 @@ body{
 }
 .space{
     border: 1px solid #31373a;
-    height: 50vh;
+    height: auto;
     width: 350px;
     border-radius: 20px;
     margin-bottom: 20px;
 }
 .news{
     border: 1px solid #31373a;
-    height: 55vh;
+    height: auto;
     width: 350px;
     border-radius: 20px;
     margin-bottom: 20px;
@@ -224,7 +224,7 @@ body{
 
 .to{
     border: 1px solid #31373a;
-    height: 40vh;
+    height: auto;
     width: 350px;
     border-radius: 20px;
     margin-bottom: 20px;
@@ -537,12 +537,46 @@ body{
     background-size: cover;
     border-radius: 20px; 
 }
-/* .tox{
-
+.tox{
+    margin-top: 10px;
+    width: 60%;
+    height: 70vh;
+    margin-left: 50px;
+    background-image: url("X VIDEOS AND IMAGES/G3Qt9zmXAAAfdWm.jfif");
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
 }
 .cox{
-
-} */
+     margin-top: 10px;
+    width: 60%;
+    height: 70vh;
+    margin-left: 50px;
+    background-image: url("X VIDEOS AND IMAGES/G3Pu9BXXIAAwfqL.jfif");
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+}
+.dox{
+     margin-top: 10px;
+    width: 70%;
+    height: 60vh;
+    margin-left: 50px;
+    background-image: url(https://pbs.twimg.com/media/G3QQNSIWEAACXxp?format=jpg&name=small);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px; 
+}
+.eox{
+     margin-top: 10px;
+    width: 80%;
+    height: 70vh;
+    margin-left: 50px;
+    background-image: url(https://pbs.twimg.com/media/G3Pwe1sXAAEV8vt?format=jpg&name=900x900);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+}
 div .engagments{
      display: flex;
     justify-content: center;
@@ -584,6 +618,16 @@ div .engagments{
 .share:hover path{
     fill: #1c96e8;
 }
+.larger-container{
+    display: flex;
+   justify-content: start;
+   gap: 120px;
+}
+.medium-container{
+    margin-left: 8%;
+
+    
+}
 
 
 
@@ -604,7 +648,20 @@ div .engagments{
 
 
 
-
+@media (min-width: 768px) and (max-width: 1024px) {
+    .medium-container{
+        margin-left: 5% !important;
+    }
+     .box, .hacker, .ghost, .samsung{
+        height: 50vh;
+    }
+    .search{
+        height: 4vh;
+    }
+    .input{
+         height: 5vh;
+    }
+}
 
 @media (max-width: 1024px){
     .not-show{
@@ -659,6 +716,9 @@ div .engagments{
     .head{
         width: 85%;
     }
+    .bobby{
+        display: none;
+    }
      .second{
         margin-left: 40%;
     } 
@@ -710,6 +770,12 @@ div .engagments{
     .cox{
         height: 35vh;
     }
+    .dox{
+        height: 30vh;
+    }
+    .eox{
+        height: 35vh;
+    }
     .yupu{
         height: 4vh;
     }
@@ -735,6 +801,12 @@ div .engagments{
     .cox{
         height: 35vh;
     }
+    .dox{
+        height: 30vh;
+    }
+    .eox{
+        height: 35vh;
+    }
     .yupu{
         height: 4vh;
     }
@@ -744,7 +816,9 @@ div .engagments{
     .bobby{
         display: none;
     }
-
+    .larger-container{
+        display: block;
+    }
    .parent-container{
     position: static;
     width: 0;

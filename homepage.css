@@ -23,7 +23,7 @@ body{
     border: 1px solid #31373a;
     margin-left: 15%;
     width: 590px;
-    height: 9vh;
+    height: auto;
     background: rgba(0, 0, 0, 0.4);
    backdrop-filter: blur(10px);
     border-top: 0;
@@ -33,7 +33,7 @@ body{
     display: flex;
     align-items: center;
     width: 100%;
-    height: 9vh;
+    height: auto;
     outline: none;
     overflow-x: auto;
     gap: 20px;
@@ -93,7 +93,7 @@ body{
 .post{
     margin-left: 15%;
     width: 590px;
-    height: 33vh;
+    height: auto;
     border: 1px solid #31373a;
     outline: none;
 }
@@ -106,11 +106,7 @@ body{
     text-align: center;
     outline: none;
 }
-/* select .unity{
-    border: 1px solid green;
-    width: 300px;
-    height: 40vh;
-} */
+
 .happen{
     font-size: 20px;
     color: #696e72;
@@ -217,8 +213,11 @@ div button{
     display: none;
    background-color: black;
     box-shadow: 0 0 10px rgba(162, 159, 159, 0.918);
+    
 }
-
+.no-display:focus{
+    transform: rotate(90deg);
+}
 .define:hover{
     text-decoration: underline;
 }
@@ -275,7 +274,6 @@ div .engagments{
     width: 20px;
     margin-left: 5px;
     
-    
 }
 
 .chat{
@@ -283,6 +281,7 @@ div .engagments{
 }
 .chat:hover path{
     fill: #1c96e8;
+    
 }
 .repost:hover path{
     fill: #00ad74;
@@ -296,6 +295,7 @@ div .engagments{
 }
 .bookmark:hover path{
     fill: #1c96e8;
+   
 }
 .share:hover path{
     fill: #1c96e8;
@@ -343,10 +343,7 @@ div .engagments{
 .footer{
     display: none;
 }
-.daddyy {
-  margin-left: 65%;
-  margin-top: -867.5%; 
-}
+
 
 
 .search{
@@ -389,8 +386,8 @@ div .engagments{
 }
 
 .mummyy{
-   margin-top: 7px;
-   height: 500px;
+   margin-top: 70px;
+   height: auto;
    border: 1px solid white;
    width: 450px;
    height: 90vh;
@@ -405,7 +402,7 @@ div .engagments{
 }
 .subscribe{
     border: 1px solid #31373a;
-    height: 27vh;
+    height: auto;
     width: 350px;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -414,28 +411,28 @@ div .engagments{
 }
 .space{
     border: 1px solid #31373a;
-    height: 50vh;
+    height: auto;
     width: 350px;
     border-radius: 20px;
     margin-bottom: 20px;
 }
 .news{
     border: 1px solid #31373a;
-    height: 55vh;
+    height: auto;
     width: 350px;
     border-radius: 20px;
     margin-bottom: 20px;
 }
 .currently{
     border: 1px solid #31373a;
-    height: 75vh;
+    height: auto;
     width: 350px;
     border-radius: 20px;
     margin-bottom: 20px;
 }
 .to{
     border: 1px solid #31373a;
-    height: 40vh;
+    height: auto;
     width: 350px;
     border-radius: 20px;
     margin-bottom: 20px;
@@ -640,6 +637,16 @@ div .engagments{
 .eave{
     display: none;
 }
+.larger-container{
+    display: flex;
+   justify-content: start;
+   gap: 120px;
+}
+.medium-container{
+    margin-left: 8%;
+
+    
+}
 
 
 
@@ -658,15 +665,21 @@ div .engagments{
 
 
 
-
-
+@media (min-width: 768px) and (max-width: 1024px) {
+    .medium-container{
+        margin-left: 5% !important;
+    }
+     .box, .hacker, .ghost, .samsung{
+        height: 50vh;
+    }
+}
 @media (max-width: 1024px){
     .not-show{
         display: none;
     }
     .daddyy{
-    display: none;
-    }
+    display: none;}
+    
     .medium-container{
         margin-left: 0.5%;
     }
@@ -710,7 +723,13 @@ div .engagments{
     }
      .second{
         margin-left: 40%;
-    } 
+    }
+    .bobby{
+        display: none;
+    }
+    .larger-container{
+        display: block;
+    }
     .word{
         display: none;
     }
@@ -737,6 +756,9 @@ div .engagments{
     }
     .bobby{
         display: none;
+    }
+    .larger-container{
+        display: block;
     }
 
    .parent-container{

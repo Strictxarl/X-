@@ -177,12 +177,9 @@ body{
     border: 2px solid #1c96e8;
     outline: none;
 }
-.daddyy {
-  margin-left: 65%;
-  margin-top: -140%; 
-}
+
 .mummyy{
-   margin-top: 7px;
+   margin-top: 70px;
    height: 600px;
    border: 1px solid white;
    width: 450px;
@@ -198,7 +195,7 @@ body{
 }
 .subscribe{
     border: 1px solid #31373a;
-    height: 27vh;
+    height: auto;
     width: 350px;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -207,28 +204,28 @@ body{
 }
 .space{
     border: 1px solid #31373a;
-    height: 50vh;
+    height: auto;
     width: 350px;
     border-radius: 20px;
     margin-bottom: 20px;
 }
 .news{
     border: 1px solid #31373a;
-    height: 55vh;
+    height: auto;
     width: 350px;
     border-radius: 20px;
     margin-bottom: 20px;
 }
 .currently{
     border: 1px solid #31373a;
-    height: 75vh;
+    height: auto;
     width: 350px;
     border-radius: 20px;
     margin-bottom: 20px;
 }
 .to{
     border: 1px solid #31373a;
-    height: 40vh;
+    height: auto;
     width: 350px;
     border-radius: 20px;
     margin-bottom: 20px;
@@ -451,6 +448,16 @@ body{
     display: none;
 }
 
+.larger-container{
+    display: flex;
+   justify-content: start;
+   gap: 120px;
+}
+.medium-container{
+    margin-left: 8%;
+
+    
+}
 
 
 
@@ -473,8 +480,11 @@ body{
 
 
 
-
-
+@media (min-width: 768px) and (max-width: 1024px) {
+    .medium-container{
+        margin-left: 5% !important;
+    }
+}
 @media (max-width: 1024px){
     .not-show{
         display: none;
@@ -521,7 +531,10 @@ body{
     }
      .second{
         margin-left: 40%;
-    } 
+    }
+    .bobby{
+        display: none;
+    }
     .word{
         display: none;
     }
