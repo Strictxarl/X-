@@ -1,9 +1,10 @@
 body{
     background-color: black;
+    cursor: pointer;
 }
 .parent-container{
     position: fixed;
-    width: 15%;
+    width: 14%;
     height: 100vh;
     top: 0;
     background-color: black;
@@ -56,7 +57,7 @@ body{
     font-family: sans-serif;
 }
 .second{
-    margin-left: 60%;
+    margin-left: 70%;
 }
 
 .logo{
@@ -196,12 +197,15 @@ div button{
     margin-left: 65px;
     font-family: sans-serif;
     font-weight: 700;
-    /* position: relative; */
+   
 }
 .nicolo:hover .no-display{
     display: block;
-    top: 45px;
-    
+    top: 35px;
+   background-color: black;
+    opacity: 1;
+    visibility: visible;
+    margin-left: 20px;
 }
 .no-display{
     position: absolute;
@@ -210,16 +214,22 @@ div button{
     width: 300px;
     z-index: 2;
     border-radius: 10px;
-    display: none;
+    /* display: none; */
    background-color: black;
-    box-shadow: 0 0 10px rgba(162, 159, 159, 0.918);
+  box-shadow: 0 0 10px rgba(162, 159, 159, 0.918);
+   opacity: 0;
+  visibility: hidden;
+  top: 0;
+  
+  transition: opacity 0.2s ease;
+  transition-delay: 2s;
+    
     
 }
-.no-display:focus{
-    transform: rotate(90deg);
-}
+
 .define:hover{
     text-decoration: underline;
+   
 }
 .username{
     font-size: 15px;
@@ -359,7 +369,7 @@ div .engagments{
 }
 
 .input{
-    position: fixed;
+    position: relative;
     z-index: 999;
     display: flex;
     top: 6px;
@@ -383,23 +393,14 @@ div .engagments{
 .input:focus{
     border: 2px solid #1c96e8;
     outline: none;
+    
 }
+.mummyy{ margin-top: 70px; border: 1px solid white; width: 450px; height: 90vh; position: fixed; /* top: 100px; */ overflow: auto; border-radius: 10px; border: none; } 
+.mummyy::-webkit-scrollbar{ overflow: hidden; }
 
-.mummyy{
-   margin-top: 70px;
-   height: auto;
-   border: 1px solid white;
-   width: 450px;
-   height: 90vh;
-   position: fixed;
-   overflow: auto;
-   border-radius: 10px;
-   border: none;
- 
-}
-.mummyy::-webkit-scrollbar{
-    overflow: hidden;
-}
+
+
+
 .subscribe{
     border: 1px solid #31373a;
     height: auto;
@@ -520,7 +521,7 @@ div .engagments{
     font-weight: bold;
     position: absolute;
     z-index: 3;
-    right: 130px;
+    right: 120px;
 }
 .free{
     padding-top: 25px;
@@ -596,6 +597,7 @@ div .engagments{
     color: gray;
     text-align: center;
    word-spacing:5px;
+   
 }
 .bobby{
     position: fixed;
@@ -622,7 +624,7 @@ div .engagments{
     margin-left: -18px;
 }
 .pic img{
-    width: 45px;
+    width: 40px;
     border-radius: 50%;
 }
 
@@ -643,7 +645,7 @@ div .engagments{
    gap: 120px;
 }
 .medium-container{
-    margin-left: 8%;
+     margin-left: 7%;
 
     
 }
@@ -657,17 +659,117 @@ div .engagments{
 
 
 
+/* reset box-sizing for predictable sizing */
+*,
+*::before,
+*::after { box-sizing: border-box; }
 
 
 
 
 
+/* smoother and immediate hover reveal for .no-display */
+/* .no-display{
+    transition: opacity .18s ease, visibility .18s ease, transform .18s ease;
+    transition-delay: 0s;
+    transform: translateY(-6px);
+    opacity: 0;
+    visibility: hidden;
+}
+.nicolo:hover .no-display{
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+} */
+
+/* prefer default pointer behavior (avoid forcing pointer everywhere) */
+body{
+    cursor: default;
+}
 
 
+@media (min-width: 780px) and (max-width: 854px) {
+    .tics{
+        margin-top: 450px !important;
+    }
+}
+
+@media (min-width: 540px) and (max-width: 545px){
+       .sogo{
+        display: block !important;
+        width: 26px;
+        padding-top: 15px !important;
+       }
+       .logo{
+        padding-top: 15px !important;
+       }
+        .box, .hacker, .ghost, .samsung{
+        height: 50vh;
+    }
+    div .engagments{
+    gap: 70px;
+ 
+    }
+    .tics{
+        display: block;
+        margin-top: 10px !important;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1026px) {
+  .daddyy{
+    display: block !important;
+  }
+  .subscribe, .space, .news, .currently, .to{
+    height: auto;
+    width: 290px;
+  }
+  .parent-container{
+    width: 7%;
+  }
+  .larger-container{
+    margin-left: -5%;
+  }
+  .purple{
+    height: 2.5vh;
+  }
+  .scripe{
+     height: 3vh;
+  }
+  .yip{
+    right: 175px;
+  }
+  .yupu{
+    height: 3vh;
+    
+  }
+  .tide{
+    gap: 100px;
+  }
+  .ree{
+    gap: 100px;
+  }
+  .input{
+    width: 290px;
+    height: 3.5vh;
+  }
+  .tuuu{
+    text-align: start;
+  }
+  .tics{
+    margin-top: 630px !important;
+   
+  }
+  .host{
+    height: 3vh;
+  }
+  .search{
+    height: 4vh;
+  }
+}
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .medium-container{
-        margin-left: 5% !important;
+        margin-left: 6% !important;
     }
      .box, .hacker, .ghost, .samsung{
         height: 50vh;
@@ -681,7 +783,7 @@ div .engagments{
     display: none;}
     
     .medium-container{
-        margin-left: 0.5%;
+        margin-left: 2%;
     }
    .sogo{
     display: block;
@@ -691,7 +793,7 @@ div .engagments{
     .tics{
         display: block;
         margin-top: 270px;
-        margin-left: -18px !important;
+        margin-left: -20px !important;
     }
     .pics{
         display: none !important;
@@ -745,9 +847,9 @@ div .engagments{
     .daddyy{
         display: none;
     }
-    .sogo{
+    /* .sogo{
         display: none !important;
-    }
+    } */
 }
 @media (max-width: 500px ) {
     body{

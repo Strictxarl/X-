@@ -3,7 +3,7 @@ body{
 }
 .parent-container{
     position: fixed;
-    width: 15%;
+    width: 14%;
     height: 100vh;
     top: 0;
     background-color: black;
@@ -87,7 +87,7 @@ body{
     display: none;
 }
 .second{
-    margin-left: 60%;
+    margin-left: 70%;
 }
 
 .logo{
@@ -454,7 +454,7 @@ body{
    gap: 120px;
 }
 .medium-container{
-    margin-left: 8%;
+    margin-left: 7%;
 
     
 }
@@ -478,11 +478,91 @@ body{
 
 
 
+@media (min-width: 780px) and (max-width: 854px) {
+    .tics{
+        margin-top: 450px !important;
+    }
+}
 
+@media (min-width: 540px) and (max-width: 545px){
+       .sogo{
+        display: block !important;
+        width: 26px;
+        padding-top: 15px !important;
+       }
+       .logo{
+        padding-top: 15px !important;
+       }
+        .box, .hacker, .ghost, .samsung{
+        height: 50vh;
+    }
+    div .engagments{
+    gap: 70px;
+ 
+    }
+    /* .tics{
+        display: block;
+        margin-top: 10px !important;
+    } */
+}
+@media (min-width: 1024px) and (max-width: 1026px) {
+  .daddyy{
+    display: block !important;
+  }
+  .subscribe, .space, .news, .currently, .to{
+    height: auto;
+    width: 290px;
+  }
+  .parent-container{
+    width: 7%;
+  }
+  .larger-container{
+    margin-left: -5%;
+  }
+  .purple{
+    height: 2.5vh;
+  }
+  .scripe{
+     height: 3vh;
+  }
+  .yip{
+    right: 190px;
+  }
+  .yupu{
+    height: 3vh;
+    
+  }
+  .tide{
+    gap: 100px;
+  }
+  .ree{
+    gap: 100px;
+  }
+  .input{
+    width: 290px;
+    height: 3.5vh;
+  }
+  .tuuu{
+    text-align: start;
+  }
+  .tics{
+    margin-top: 630px !important;
+   
+  }
+  .host{
+    height: 3vh;
+  }
+  .search{
+    height: 4vh;
+  }
+}
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .medium-container{
         margin-left: 5% !important;
+    }
+    .head{
+        height: 8vh ;
     }
 }
 @media (max-width: 1024px){
@@ -544,9 +624,9 @@ body{
     .fined{
         width: 85%;
     }
-    .sogo{
+    /* .sogo{
         display: none !important;
-    }
+    } */
     .notify{
         width: 84%;
     }
