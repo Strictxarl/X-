@@ -2,13 +2,16 @@ body{
     background-color: black;
 }
 .contain{
-    margin-left: 100px;
+    
     display: flex;
     justify-content: center;
+    
 }
 .container2{
-    margin-left: 180px;
-    margin-top: 70px;
+
+    
+    margin-left: 200px;
+    margin-top: 100px;
 }
 .log{
     display: flex;
@@ -16,7 +19,8 @@ body{
     margin-left: -70px;
 }
 .logo{
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
 }
 .now{
     color: #e7e9ea;
@@ -48,7 +52,7 @@ span.now{
 .signin{
     display: flex;
     align-items: center;
-    height: 7.5vh;
+    height: 40px;
     width: 300px;
     border-radius: 20px;
     margin-bottom: 13px;
@@ -69,7 +73,9 @@ span.now{
     font-size: 10px;
 }
 .yusuf{
-   
+    line-height:15px;
+    position: relative;
+    right:  20px;
     color: black;
     font-size: 11px;
     font-weight: bolder;
@@ -84,7 +90,8 @@ span.now{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 7.5vh;
+    gap: 7px;
+    height: 40px;
     width:300px;
     border-radius: 20px;
     color: black;
@@ -104,7 +111,7 @@ span.now{
     content: "";
     display: inline-block;
     width: 125px;
-    border: 1px solid gray;
+    border: 1px solid rgba(128, 128, 128, 0.329);
     margin-right: 10px;
     vertical-align: middle;
 }
@@ -112,8 +119,7 @@ span.now{
     content: "";
     display: inline-block;
     width: 125px;
-    border: 1px solid gray;
-    background-color: gray;
+     border: 1px solid rgba(128, 128, 128, 0.329);
     margin-left: 10px;
     vertical-align: middle;
 }
@@ -121,7 +127,7 @@ span.now{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 7.5vh;
+    height: 40px;
     width:300px;
     border-radius: 20px;
     color: black;
@@ -174,7 +180,7 @@ span.now{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 7.5vh;
+    height: 40px;
     width:300px;
     border-radius: 20px;
     color: white;
@@ -192,7 +198,7 @@ span.now{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 7.5vh;
+    height: 40px;
     width:300px;
     border-radius: 20px;
     color: white;
@@ -212,7 +218,7 @@ span.now{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 7.5vh;
+    height: 40px;
     width:300px;
     display: none;
     border-radius: 20px;
@@ -238,9 +244,17 @@ span.now{
     .logo{
         width: 30px;
     }
+   
     .contain{
-        display: block;
-        margin-left: 50px;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        
+        overflow: hidden;
+    }
+    .page-wrapper{
+        display: flex;
+        justify-content: center;
     }
     .log{
         margin-left: 0px;
@@ -257,7 +271,11 @@ span.now{
         display: flex;
     }
 }
-@media (max-width: 512px) {
+@media (max-width: 500px) {
+     .page-wrapper{
+        display: flex;
+        justify-content: center;
+     }
     .now{
         font-size: 2.6rem;
         font-weight: 900px;
@@ -267,25 +285,3 @@ span.now{
         line-height: 28px;
     }
 }
-/* @media (max-width: 360px) {
-    .or{
-    color: #e7e9ea;
-    font-family: sans-serif;
-}
-.or::before{
-    content: "";
-    display: inline-block;
-    width: 100px;
-    border: 1px solid gray;
-    margin-right: 10px;
-    vertical-align: middle;
-}
-.or::after{
-    content: "";
-    display: inline-block;
-    width: 100px;
-    border: 1px solid gray;
-    background-color: gray;
-    margin-left: 10px;
-    vertical-align: middle;
-} */
