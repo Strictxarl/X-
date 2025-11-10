@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="shortcut icon" href="https://th.bing.com/th/id/R.eab2ea9bdad0b1f20d3c7d97c3c599eb?rik=w0n7cX5EBVTofw&pid=ImgRaw&r=0" type="image/x-icon" />
+    <style>
+        body {
+            background: linear-gradient(to bottom right, #4158D0, #C850C0, #FFCC70);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        .container {
+            backdrop-filter: blur(20px);
+            background: rgba(255, 255, 255, 0.25);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            width: 90%;
+            max-width: 420px;
+            padding: 35px 28px;
+            box-shadow: 0 0 25px rgba(0,0,0,0.25);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        input,
+        textarea {
+            padding: 10px;
+            border-radius: 10px;
+            border: 2px solid black;
+            background: transparent;
+        }
+
+        textarea {
+            min-height: 80px;
+            resize: none;
+        }
+
+        button {
+            background: #ffffff;
+            color: #2c2c2c;
+            border: none;
+            padding: 12px;
+            border-radius: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            transition: 0.25s;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.22);
+        }
+
+        p.note {
+            font-size: 12px;
+            text-align: center;
+            opacity: 0.85;
+            margin-top: 5px;
+        }
+
+        input:focus-within{
+            outline: none;
+        }
+        textarea:focus-within{
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/xkgkwyld" method="POST">
+            <label>Your Email:</label>
+            <input type="email" name="email" required />
+
+            <label>Your Message:</label>
+            <textarea name="message" required></textarea>
+
+            <p class="note">For internship opportunities, collaboration, or corrections, kindly send a message using this form.</p>
+
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</body>
+</html>
