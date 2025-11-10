@@ -1,13 +1,40 @@
 body{
     background-color: black;
 }
-.parent-container{
-    position: fixed;
-    width: 14%;
-    height: 100vh;
-    top: 0;
-    background-color: black;
-    z-index: 3;
+.none{
+            margin-top: 10px !important;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 95vh;
+            gap: 20px;
+            position: fixed;
+            width: 12%;
+            top: 0;
+            overflow-x: auto;
+            color-scheme: dark;
+            scrollbar-color: rgb(62, 65, 68) rgb(22, 24, 28);
+            align-items: end;
+            
+}
+.karem{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+           gap: 20PX;
+            
+        }
+.mogo{
+    display: none;
+}
+.pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: url(https://i.pinimg.com/originals/4b/5b/c5/4b5bc5355bb1caeeb1094603a01c77d1.jpg);
+    background-position: center;
+    background-size: cover;
+    border: 1px solid #31373a  ;
 }
 
 .xx{
@@ -41,9 +68,9 @@ body{
     justify-content: start;
     align-items: end;
     border: 1px solid #31373a;
-    margin-left: 15%;
+    margin-left: 14%;
     width: 590px;
-    height: 18vh;
+    height: 120px;
     background: rgba(0, 0, 0, 0.4);
    backdrop-filter: blur(10px);
     border-top: 0;
@@ -121,20 +148,20 @@ body{
     margin-left: -10px;
 }
 .undefined{
-    margin-left: 15%;
+    margin-left: 14%;
     border: 1px solid  #31373a;
     width: 590px;
     height: auto;
     padding-bottom: 20px;
-    
+    border-bottom: 0;
 }
 .fined{
-    margin-left: 15%;
+    margin-left: 14%;
     border: 1px solid  #31373a;
     width: 590px;
     height: auto;
     padding-bottom: 20px;
-    
+    border-bottom: 0;
 }
 
 
@@ -292,12 +319,12 @@ body{
 .purple{
     border: 2px solid #f91880;
     width: 130px;
-    height: 6vh;
+    height: 40px;
     
     display: flex;
    
     justify-content: flex-start;
-    /* gap: 20px;  */
+   
 }
  .purple img{
   width: 30px;
@@ -311,9 +338,9 @@ body{
 .yip{
     color: white;
     font-weight: bold;
-    position: absolute;
+    position: relative;
     z-index: 3;
-    right: 120px;
+    
 }
 .free{
     padding-top: 25px;
@@ -337,12 +364,17 @@ body{
     font-size: 13px;
     margin-left: 20px;
 }
-.wooo img{
-    border-radius: 20px;
+#wooo img{
+    border-radius: 5px;
+    width: 80px;
+    height: 60px;
+    margin-left: 0;
+    
 }
 .turple{
     display: flex;
     justify-content: flex-start;
+    gap: 10px;
     
 }
 .lace{
@@ -358,19 +390,19 @@ body{
 .ree{
     padding-top: 25px;
     display: flex;
-    gap: 165px;
+    justify-content: space-between;
 }
 .cod{
     width: 20px;
 }
 .tide{
     display: flex;
-    gap: 180px;
+    justify-content: space-between;
 }
 .yupu{
     border: 2px solid white;
     width: 100px;
-    height: 6vh;
+    padding: 5px;
     border-radius: 20px;
     display: flex;
     background-color: white;
@@ -477,7 +509,64 @@ body{
 
 
 
-
+@media (min-width: 1024px) and (max-width: 1029px) {
+     .mogo{
+    display: block;
+   
+   }
+   .none{
+     width: 10%;
+     align-items: center;
+   }
+   .pics{
+    display: none !important;
+   }
+   .head{
+    height: 120px !important;
+   }
+}
+@media (min-width: 912px) and (max-width: 915px) {
+    .mogo{
+    display: block;
+   
+   }
+   .pics{
+    display: none !important;
+   }
+   .head{
+    height: 120px !important;
+   }
+}
+@media (min-width: 912px) and (max-width: 915px) {
+    .tics{
+    margin-top: 630px !important;
+   
+     } 
+}
+@media (min-width: 820px) and (max-width: 854px) {
+     .mogo{
+    display: block;
+   
+   }
+   .pics{
+    display: none !important;
+   }
+   .head{
+    height: 120px !important;
+   }
+}
+@media (min-width: 768px) and (max-width: 769px) {
+     .mogo{
+    display: block;
+   
+   }
+   .pics{
+    display: none !important;
+   }
+   .head{
+    height: 120px !important;
+   }
+}
 @media (min-width: 780px) and (max-width: 854px) {
     .tics{
         margin-top: 450px !important;
@@ -485,25 +574,24 @@ body{
 }
 
 @media (min-width: 540px) and (max-width: 545px){
-       .sogo{
-        display: block !important;
-        width: 26px;
+ .mogo{
+    display: block;
+   
+   }
+    .karem{
+        gap: 15px;
+      }
+    .logo{
         padding-top: 15px !important;
        }
-       .logo{
-        padding-top: 15px !important;
-       }
-        .box, .hacker, .ghost, .samsung{
+    .box, .hacker, .ghost, .samsung{
         height: 50vh;
     }
     div .engagments{
     gap: 70px;
  
     }
-    /* .tics{
-        display: block;
-        margin-top: 10px !important;
-    } */
+   
 }
 @media (min-width: 1024px) and (max-width: 1026px) {
   .daddyy{
@@ -562,7 +650,7 @@ body{
         margin-left: 5% !important;
     }
     .head{
-        height: 8vh ;
+        height: auto ;
     }
 }
 @media (max-width: 1024px){
@@ -572,21 +660,18 @@ body{
     .daddyy{
     display: none;
     }
-    .sogo{
-    display: block;
-    width: 26px;
-    padding-top: 23px
-   }
+    
    .tics{
         display: block;
         margin-top: 270px;
         margin-left: -5px !important;
     }
-    .pics{
-        display: none !important;
-    }
+   
     .medium-container{
         margin-left: 0.5%;
+    }
+    .bobby{
+        display: none !important;
     }
 }
 
@@ -624,9 +709,7 @@ body{
     .fined{
         width: 85%;
     }
-    /* .sogo{
-        display: none !important;
-    } */
+   
     .notify{
         width: 84%;
     }
@@ -650,6 +733,10 @@ body{
     .bobby{
         display: none;
     }
+    .larger-container{
+        display: block;
+        overflow: hidden !important;
+    }
 
    .parent-container{
     position: static;
@@ -671,7 +758,7 @@ body{
    }
    .head{
     margin: auto;
-    height: 18vh;
+    height: auto;
     position: relative;
     align-items: end;
     padding-top:10px;
@@ -688,6 +775,8 @@ body{
    }
    .oic{
     display: block;
+    position: relative;
+    bottom: 3px;
    }
    .second{
       display: none;
@@ -748,7 +837,10 @@ body{
       border-bottom: none;
       background-color: rgba(0, 0, 0, 0.158);
       z-index: 1000;
-      /* padding-bottom: 10px; */
+      
+   }
+   .none{
+    display: none;
    }
    .not-show{
     display: none;
@@ -766,5 +858,8 @@ body{
     position: absolute;
     z-index: 999;
     left: 93%;
+    }
+    .footer .world{
+      width: 1.75rem;
     }
 }   
